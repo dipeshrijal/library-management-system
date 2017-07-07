@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="newbook_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uiController.AddNewBookController">
+	<children>
+		<Label layoutX="126.0" layoutY="21.0" prefHeight="30.0" prefWidth="312.0" style="-fx-alignment: center; -fx-text-fill: #009688;" text="Add New Book">
+			<font>
+				<Font name="System Bold" size="24.0" />
+			</font>
+		</Label>
+		<Label layoutX="190.0" layoutY="243.0" style="-fx-alignment: center; -fx-text-fill: #009688;" text="Author Details">
+			<font>
+				<Font size="24.0" />
+			</font>
+		</Label>
+		<Button fx:id="addBook" layoutX="416.0" layoutY="476.0" mnemonicParsing="false" onAction="#addNewBook" prefHeight="38.0" prefWidth="161.0" styleClass="button-success" stylesheets="@application.css" text="Add Book" />
+		<JFXTextField fx:id="id" layoutX="184.0" layoutY="64.0" prefHeight="24.0" prefWidth="199.0" promptText="Enter ID" style="-jfx-label-float: true;" />
+		<JFXTextField fx:id="title" layoutX="182.0" layoutY="108.0" prefHeight="24.0" prefWidth="205.0" promptText="Enter Title" style="-jfx-label-float: true;" />
+		<JFXTextField fx:id="isbn" layoutX="182.0" layoutY="156.0" prefHeight="24.0" prefWidth="205.0" promptText="Enter ISBN" style="-jfx-label-float: true;" />
+		<JFXTextField fx:id="borrowabledays" layoutX="181.0" layoutY="202.0" prefHeight="24.0" prefWidth="205.0" promptText="Enter Borrowable Days" style="-jfx-label-float: true;" />
+		<JFXTextField fx:id="fName" layoutX="25.0" layoutY="289.0" prefHeight="24.0" prefWidth="234.0" promptText="Enter First Name" style="-jfx-label-float: true;" />
+		<JFXTextField fx:id="lName" layoutX="337.0" layoutY="288.0" prefHeight="24.0" prefWidth="234.0" promptText="Enter Last Name" style="-jfx-label-float: true;" />
+		<JFXTextField fx:id="street" layoutX="23.0" layoutY="347.0" promptText="Enter Street" style="-jfx-label-float: true;" />
+		<JFXTextField fx:id="city" layoutX="228.0" layoutY="348.0" promptText="Enter City" style="-jfx-label-float: true;" />
+		<JFXTextField fx:id="state" layoutX="418.0" layoutY="348.0" promptText="Enter State" style="-jfx-label-float: true;" />
+		<JFXTextField fx:id="zip" layoutX="21.0" layoutY="412.0" promptText="Enter Zip" style="-jfx-label-float: true;" />
+		<JFXTextField fx:id="phoneNumber" layoutX="223.0" layoutY="412.0" promptText="Enter Phone Number" style="-jfx-label-float: true;" />
+		<JFXTextField fx:id="bio" layoutX="417.0" layoutY="412.0" promptText="Enter bio" style="-jfx-label-float: true;" />
+	</children>
+</Pane>

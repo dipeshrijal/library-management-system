@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="viewcheckout_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uiController.CheckoutViewController">
+   <children>
+      <Label layoutX="192.0" layoutY="21.0" style="-fx-alignment: center; -fx-text-fill: #009688;" text="Checkout Records">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table_pane" layoutX="1.0" layoutY="129.0" prefHeight="271.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="item" prefWidth="148.0" text="Item" />
+          <TableColumn fx:id="doc" prefWidth="181.0" text="Date of Checkout" />
+            <TableColumn fx:id="dueDate" prefWidth="149.0" text="Due Date" />
+            <TableColumn fx:id="available" maxWidth="125.0" prefWidth="119.0" text="Available" />
+        </columns>
+      </TableView>
+      <Button fx:id="viewCheckout" layoutX="230.0" layoutY="72.0" mnemonicParsing="false" onAction="#viewCheckout" prefHeight="30.0" prefWidth="141.0" styleClass="button-search" stylesheets="@application.css" text="Check" />
+      <JFXTextField fx:id="memberid" layoutX="17.0" layoutY="78.0" prefHeight="23.0" prefWidth="199.0" promptText="Enter Member ID" style="-jfx-label-float: true;" />
+      <!-- <Button fx:id="cancelButton" layoutX="343.0" layoutY="67.0" mnemonicParsing="false" onAction="#returnBack" text="Cancel" /> -->
+   </children>
+</Pane>

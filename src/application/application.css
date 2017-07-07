@@ -1,0 +1,39 @@
+.button-raised{
+    -fx-padding: 0.7em 0.57em;
+    -fx-font-size: 14px;
+    -fx-background-color: rgb(77,102,204);
+    -fx-text-fill: WHITE;
+}
+
+.button-search{
+    -fx-padding: 0.3em 0.57em;
+    -fx-font-size: 12px;
+    -fx-background-color: rgb(77,102,204);
+    -fx-text-fill: WHITE;
+}
+
+.button-success{
+    -fx-padding: 0.7em 0.57em;
+    -fx-font-size: 14px;
+    -fx-background-color: #388E3C;
+    -fx-text-fill: WHITE;
+}
+.button-danger{
+    -fx-padding: 0.7em 0.57em;
+    -fx-font-size: 14px;
+    -fx-background-color: #c62828;
+    -fx-text-fill: WHITE;
+}
+
+.button-cyan{
+    -fx-padding: 0.7em 0.57em;
+    -fx-font-size: 14px;
+    -fx-background-color: #607D8B;
+    -fx-text-fill: WHITE;
+}
+.button-warning{
+    -fx-padding: 0.7em 0.57em;
+    -fx-font-size: 14px;
+    -fx-background-color: #D84315;
+    -fx-text-fill: WHITE;
+}

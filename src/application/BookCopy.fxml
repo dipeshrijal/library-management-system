@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="bookcopy_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uiController.BookCopyController">
+   <children>
+      <Label layoutX="157.0" layoutY="21.0" prefHeight="35.0" prefWidth="302.0" style="-fx-alignment: center; -fx-text-fill: #009688;" text="Add New Book Copy">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="giveid" layoutX="116.0" layoutY="206.0" />
+      <TextField fx:id="id" layoutX="263.0" layoutY="199.0" prefHeight="35.0" prefWidth="170.0" visible="false" />
+      <Button fx:id="addBook" layoutX="264.0" layoutY="242.0" mnemonicParsing="false" onAction="#addNewBook" prefHeight="23.0" prefWidth="170.0" styleClass="button-success" stylesheets="@application.css" text="Add Book Copy" visible="false" />
+      <Button fx:id="searchButton" layoutX="371.0" layoutY="72.0" mnemonicParsing="false" onAction="#searchBook" prefHeight="23.0" prefWidth="93.0" styleClass="button-search" stylesheets="@../../bin/application/application.css" text="Search" />
+      <Label fx:id="error" layoutX="253.0" layoutY="125.0" />
+      <Label fx:id="title" layoutX="253.0" layoutY="150.0" />
+      <Label fx:id="author" layoutX="255.0" layoutY="175.0" />
+      <JFXTextField fx:id="isbn" layoutX="67.0" layoutY="71.0" prefHeight="23.0" prefWidth="202.0" promptText="Search ISBN" style="-jfx-label-float: true;" />
+   </children>
+</Pane>
